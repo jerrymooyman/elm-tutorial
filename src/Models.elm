@@ -16,8 +16,15 @@ initialModel =
 type alias PlayerId =
     String
 
+
 type alias Player =
     { id : PlayerId
     , name : String
     , level : Int
     }
+
+
+type Route
+    = PlayersRoute
+    | PlayerRoute PlayerId
+    | NotFoundRoute
